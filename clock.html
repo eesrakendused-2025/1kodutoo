@@ -1,0 +1,68 @@
+<!-- Esmalt esitasin chatGPT githubis olevad nõuded, mille tulemusel ta hakkas mult pärima infot nagu milline see kell olla võiks, millised effektid,nupud.
+ Edasi lõi ta baas põhja ja hakkas edasisi suunavaid küsimusi küsima, millele vastus on allpool kirjutatud.-->
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kell</title>
+  <link rel="stylesheet" href="clock.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Raleway&family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="background-overlay"></div>
+
+
+  <!-- Prompt: Loo seadete nupp, kus saab muuta kella suurust, värvi, fonti, kella asukohta ekraanil ja taustapilti vahetada saaremaa piltidest, 
+   mille ise välja valin netist.(Kella ajaformaadi muutmise,
+   ja inglise keelse seadete ja kuupäeva võimaluse pakkus välja chatgpt, 
+   mis mulle sobis, et saaksin 6 erinevat muutuvat kella atribuuti võimaldada). 
+   Lisaks loo helinupp, et saaksin tasutale panna muusika mängima, millel saab helitugevust muuta 
+   (chatgpt pakkus välja, et luua liugur, mis mulle sobis!).-->
+  
+  <div id="control-panel">
+    <button id="settings-toggle">⚙️ Seaded</button>
+
+
+    <button id="sound-toggle">🔊</button>
+    <input type="range" id="volume-control" min="0" max="1" step="0.01" value="0.3" style="display: none;">
+
+    <!-- Algselt gpt tahtis luua kõik nupud visuaalsena, aga soovisin hoida kella võimalikult puhtana, niisiis pakkusin välja, et luua "dropdown settingud, 
+     et kui selle peale vajutada siis tulevad teised nupud ka nähtavale " -->
+    <div id="settings-panel" style="display: none;">
+      <button id="font-size-btn">Muuda suurust</button>
+      <button id="color-btn">Muuda värvi</button>
+      <button id="font-btn">Muuda fonti</button>
+      <button id="position-btn">Muuda asukohta</button>
+      <button id="bg-btn">Muuda tausta</button>
+
+      <select id="format-select">
+        <option value="24">24h</option>
+        <option value="12">12h</option>
+      </select>
+
+      <select id="lang-select">
+        <option value="et">EST</option>
+        <option value="en">ENG</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="clock-container">
+    <div id="clock">00:00:00</div>
+    <div id="date">Päev, Kuupäev, Aasta</div>
+  </div>
+
+  <!-- Prompt: Lisa alla vasakusse jalusesse autori nimi(Marcus Puust) ja viide githubi repositooriumile (nõuetele all mainitud) -->
+  <footer>
+    <p>Autor: Marcus Puust</p>
+    <a href="https://github.com/MarcusPuust/1kodutoo" target="_blank">Vaata repositooriumi GitHubis</a>
+  </footer>
+
+  <script src="clock.js"></script>
+  <script src="sound.js"></script>
+  <!-- Ilma selle alumiseta "js?v=2" ei muutunud seadetes "ENG" valides seaded inglise keelseks, mida kurtsin ka chatGPT, 
+   kes pakkus selle välja, mis sunnib brauserit uuesti laadima, et keel muutuks ja saaks info controls.js kätte -->
+  <script src="controls.js?v=2"></script>
+</body>
+</html>
