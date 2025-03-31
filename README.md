@@ -1,3 +1,22 @@
+# Carl-Eric Sepp
+
+
+## Funktsionaalsus
+1. "Style" nupp muudab numbrite ja kuupäeva font'i
+2. Vajutades tavalise kella taustale, muudab see värvi. Analoogkellal muudab see automaatselt värvi
+3. Kirjutades "fall" tavalise kella peal, kukuvad numbrid ekraanilt maha
+4. Kirjutades "break" analoogkellal, kukuvad kellaosutid alla
+5. Kirjutades "fix" kummagi kella peal, parandab see mõlemad kellad ära
+6. "Set alarm" nupuga saab lisada kellaaja märguande jaoks ja märguande teksti
+7. Vajutades kella emoji'le, vahetab see tavalise ja analoogkella vahel
+
+
+## Ekraanipilt rakendusest
+
+![Screenshot 2025-03-30 163204](https://github.com/user-attachments/assets/d0b96ea0-2e12-4765-9ed7-0ff5f2904937)
+
+
+
 # 1-kodutoo
 # 1-kodutoo
 
