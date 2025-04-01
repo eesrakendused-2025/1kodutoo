@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clock.css">
+    <script src="clock.js" defer></script>
+    <script src="timer.js" defer></script>
+    <script src="sound.js" defer></script>
+    <script src="font.js" defer></script>
+
+
+    <title>Kell</title>
+</head>
+<body>
+    <!-- prompt: how to make a universal style for buttons to make it more compact -->
+    <div id="buttonBar">
+        <button id="lang-toggle" class="buttons">ENG/EST</button>
+        <button id="set-timer" class="buttons">Timer</button>
+        <button id="font-toggle" class="buttons">Change Font</button>
+        <button id="play-sound" class="buttons">♫</button>
+        
+
+    </div>
+
+    <div id="timer-display"></div>
+
+    <!-- Sama promptiga, millega sain css kujunduse soovitas chatgpt -->
+    <!-- lisada siia "class="flip-panel"osad, muu oli mul juba olemas-->
+    
+    <div id="container">
+        <div class="flip-panel" id="hours">0h</div>
+        <div class="flip-panelDivider">:</div>    
+        <div class="flip-panel" id="minutes">0m</div>
+        <div class="flip-panelDivider">:</div>
+        <div class="flip-panel" id="seconds">0s</div>
+        <div id="date">kuupaev kuu aasta</div>
+    
+    </div>
+
+    <script>
+        console.log(document.getElementById('hours'));
+    </script>
+    
+    <!-- chatgpt prompt: how to create a footer so that what i write there is on the bottom of the screen -->
+    <p id="footer">Karl Luberg <br> <a href="https://github.com/KarlLuberg1/1kodutoo" target="_blank">GitHub link</a> </p>
+    
+
+</body>
+</html>
