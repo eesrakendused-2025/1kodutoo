@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clock.css">
+    <script src="clock.js" defer></script>
+    <script src="media.js"></script>
+    <script>
+        (function() {
+            document.addEventListener("mousemove", parallax);
+
+            function parallax(e) {
+                let w = window.innerWidth/2;
+                let h = window.innerHeight/2;
+                let mouseX = e.clientX;
+                let mouseY = e.clientY;
+                let pos = `${50 - (mouseX - w) * document.getElementById("parallaxBtn").value}% ${50 - (mouseY - h) * document.getElementById("parallaxBtn").value}%`;
+                document.querySelector("#background").style.backgroundPosition = pos; /*https://www.winterwind.com/tutorials/css/4*/
+            }
+        })();
+    </script>
+    <title>Clock</title>
+</head>
+<body>
+    <div id="name">
+        <p>Maria Rjabtseva</p>
+        <a href="https://github.com/nkdsnaketlu/1kodutoo">Github</a>
+    </div>
+        <div id="container">
+            <div id="clock">
+                <div id="hours">0h</div>
+                <div id="minutes">0m</div>
+                <div id="seconds">0s</div>
+                <img src="https://vignette.wikia.nocookie.net/vsbattles/images/6/60/Naked_Snake3.png/revision/latest?cb=20170101140133" alt="Snake" height="100px" width=" 50px">
+            </div>
+            <div id="date">date month year</div>
+            <div id="weekday">weekday</div>
+        </div>
+        <div id="buttons">
+            <label for="colorBtn" class="picture">Text color: </label>
+            <input type="color" id="colorBtn" class="picture" name="colorBtn" value="#d8f3ee" />
+            <br>
+            <label for="brightnessBtn" class="picture">Brightness: </label>
+            <input id="brightnessBtn" class="picture" type="range" min="0" max="200" value="100">
+            <br>
+            <label for="blurBtn" class="picture">Blur: </label>
+            <input id="blurBtn" class="picture" type="range" min="0" max="20" value="0" step=".1">
+            <br>
+            <label for="parallaxBtn" class="picture" >Parallax: </label>
+            <input id="parallaxBtn" class="picture" type="range" min="0" max=".04" value=".02" step=".001">
+            <br>
+            <label class="picture" for="backgroundInput">Custom image:</label>
+            <input id="backgroundInput" class="picture" type="text">
+            <button id="okBtn" class="picture" onclick="setBackground()">ok</button>
+            <div id="music">
+                <button id="musicBtn" type="button">⏸</button>
+                <input id="volumeBtn" type="range" min="0" max="1" value=".25" step=".1">
+            </div>
+        </div>
+        <div id="background"></div>
+</body>
+</html>
