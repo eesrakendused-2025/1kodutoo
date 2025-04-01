@@ -2,6 +2,21 @@
 # 1-kodutoo
 
 ## Tähtaeg 01.04.2025 23:59
+Taavet-Valter Varkki
+![image](https://github.com/user-attachments/assets/d57c8c86-72aa-4b3b-b478-2f1f9a96c7d9)
+funktsioonid
+1. Kella formaadi muutmine (12h / 24h)
+1. Kella värvi muutmine
+1. Taustavärvi muutmine
+1. Ajatsooni muutmine
+1. Näitab, kui kaua on kasutaja kella vaadanud
+1. Kella peitmine ja kuvamine
+1. Salvestab asjad localStorage'i
+
+Kui soovid suuremat kella, siis lihtsalt zoomi sisse :)
+
+
+
 
 Max 15 punkti.
 
