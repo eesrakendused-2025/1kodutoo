@@ -1,4 +1,18 @@
 # 1-kodutoo
+
+### Lehe autor on Age Toomet
+
+## Ekraanipilt lehest
+![Ekraanipilt Age Toometi Romeo ja Julia teemalisest funktsionaalsest lauakellast](screenshot-clock2.png)
+
+## Funktsionaalsus
+* Klõpsates kella numbritele, saab muuta selle värvust - tuleb juhuslik värv.
+* Vajutades üleval servas Romeo ja Julia näidendi tsitaadile, vahetub see uue tsitaadi vastu - kokku on 5 tsitaati.
+* Kasutajal on võimalik valida kolme erineva taustamuusika vahel valides pala ning vajutades play nupule. Taustaks saab panna Sergei Prokofjevi "Romeo ja Julia" balletist valitud palasid.
+* Kui vajutada nupule, millel on 💔 emotikon, lähevad lehe all vasakus servas olevad pildid horisontaalseks ehk tegelased n-ö kukuvad pikali. See funktsioon demonstreerib Romeo ja Julia näidendis peategelaste hukkumist.
+* Vajutades nupule "Mida see punane nupp teeb?" hakkab lehe ülemisest servast langema roosiõisi. 
+* Veebilehel on nupp "Võta ühendust!", mis jookseb hiire kursori eest ära ning kasutaja saab seda taga ajada, kuid seda päriselt vajutada ei saa, kuna selle kättesaamine on pea võimatu.
+
 # 1-kodutoo
 
 ## Tähtaeg 01.04.2025 23:59

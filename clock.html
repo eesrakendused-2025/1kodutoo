@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clock.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Felipa&family=Joti+One&display=swap" rel="stylesheet">
+    <script src="clock.js" defer></script>
+    <title>Kell</title>
+</head>
+<body>
+    <div id="quote">"O Romeo, Romeo! wherefore art thou Romeo?"</div>
+    <div id="container">
+        <div id="author">Autor: Age Toomet
+            <br>
+            <a href="https://github.com/agetoomet/I_kodutoo">Rakenduse repositoorium</a>
+        </div>
+        <div id="clock">
+            <div id="hours">0h</div>
+            <div id="minutes">0min</div>
+            <div id="seconds">0s</div>
+        </div>
+        <div id="day">päev</div>
+        <div id="date">kuupäev aasta</div>
+        <div id="music-controls">
+            <select id="music-select">
+                <option value="https://open.spotify.com/embed/track/3Qpj345VRGBSwuOSwFgoQI?utm_source=generator">
+                    I pala
+                </option>
+                <option value="https://open.spotify.com/embed/track/2h1a7DY5C44vqou0GWCG7k?utm_source=generator">
+                    II pala
+                </option>
+                <option value="https://open.spotify.com/embed/track/7HztMU6DEd3qd6RhJ2GvN4?utm_source=generator">
+                    III pala
+                </option>
+            </select>
+        </div>
+        <iframe id="spotify-player" style="border-radius:12px" width="88%" height="150" 
+            frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+        </iframe>
+        <audio id="background-music" loop></audio>
+        <button id="fall-button">💔</button>
+    </div>
+
+    <button id="falling-roses-btn">Mida see punane nupp teeb?</button>
+    <div id="rose-container"></div>
+
+    <div id="characters">
+        <img id="romeo" src="romeo.png" alt="Romeo">
+        <img id="juliet" src="juliet.png" alt="Julia">
+    </div>
+
+    <script>
+        console.log(document.getElementById('hours'));
+    </script>
+    
+    <button id="runaway-btn">Võta ühendust!</button>
+</body>
+</html>
