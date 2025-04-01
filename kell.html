@@ -1,0 +1,61 @@
+<! -- Prompt: Pean looma elektroonilise kella, mis näitab lisaks kellaajale ka kuupäeva, nädalapäeva ja aastat.-->
+<! -- Vastavalt kasutaja tegevusele on võimalik muuta kuut lauakella atribuuti.-->
+<! -- Pean kasutama eventListener'e ja funktsioone.--> 
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blade Runner Clock</title>
+  <link rel="stylesheet" href="stiil.css" />
+  <script src="kell.js" defer></script>
+</head>
+<body>
+    <video autoplay muted loop id="bgVideo">
+        <source src="background.mp4" type="video/mp4">
+        Sinu brauser ei toeta videot.
+      </video>      
+  <div id="clockContainer">
+    <div id="time"class="glitch"></div>
+    <div id="date"></div>
+
+    <div id="controls">
+      <label>Värv:
+        <input type="color" id="colorPicker" />
+      </label>
+      <label>Font:
+        <select id="fontSelect">
+          <option value="Orbitron">Orbitron</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Arial">Arial</option>
+        </select>
+      </label>
+      <label>Suurus:
+        <input type="range" id="fontSize" min="1" max="10" step="0.5" />
+      </label>
+      <label>Taust:
+        <input type="color" id="bgColor" />
+      </label>
+      <label>Formaat:
+        <select id="formatSelect">
+          <option value="24">24h</option>
+          <option value="12">12h</option>
+        </select>
+      </label>
+      <button id="toggleTheme">Blade Runner / Classic</button>
+    </div>
+
+    <footer>
+      <p>Autor: Gendra Kotsar</p>
+      <a href="https://github.com/gendrakotsar/1tunnitoo" target="_blank">Vaata repositooriumi GitHubis</a>
+    </footer>
+  </div>
+  <div id="hint">⚙️ Seaded</div>
+  <button id="musicToggle">🎵</button>
+<audio id="bgMusic" loop>
+  <source src="Blade_Runner_Blues-Vangelis.mp3" type="audio/mpeg">
+  Sinu brauser ei toeta heli esitust.
+</audio>
+</body>
+</html>
