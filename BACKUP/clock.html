@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clock.css">
+    <script src="clock.js" defer></script>
+    <title>Clock</title>
+</head>
+<body>
+    <div id="container">
+        <div id="time">
+            <div id="hours">00</div>
+            <div id="minutes">00</div>
+            <div id="seconds">00</div>
+        </div>
+        <div id="date">Day, Month Date, Year</div>
+    </div>
+
+    <!-- Settings Toggle Button -->
+    <button id="toggleSettingsBtn">Settings</button>
+
+    <!-- Settings Section -->
+    <div id="settings">
+        <label for="font-selector">Choose a Font:</label>
+        <select id="font-selector">
+            <option value="Arial">Arial</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <!-- Add more font options as needed -->
+        </select>
+    
+
+        <label for="colorPicker">Choose Color:</label>
+        <input type="color" id="colorPicker" />
+
+        <label for="resizeClock">Resize Clock:</label>
+        <input type="range" id="resizeClock" min="5" max="15" value="10" step="1" />
+
+        <button id="reset">Reset Position & Font</button>
+        <button id="moveClock">Enable Movement</button>
+        <button id="staticClock">Disable Movement</button>
+
+        <label for="uploadMusic">Upload Music:</label>
+        <input type="file" id="uploadMusic" accept="audio/*" />
+        <!-- Toggle Music Button -->
+        <button id="toggleMusic">Play Music</button>
+
+        <label for="uploadImage">Upload Background Image:</label>
+        <input type="file" id="uploadImage" accept="image/*" />
+    </div>
+
+    <footer>
+        <p>Martin Toomas Kripsaar</p>
+        <a href="https://github.com/martkrip/1kodutoo">GitHub Repository</a>
+    </footer>
+</body>
+</html>
