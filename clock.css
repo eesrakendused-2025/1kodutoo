@@ -1,0 +1,202 @@
+/* Lehe üldised sätted */
+html, body {
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("images/book1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Asetab kõik elemendid vertikaalselt ja horisontaalselt keskele */
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+/* Kellaaeg */
+#time {
+    display: flex;
+    font-size: 10vw;
+    gap: 1vw;
+    margin-bottom: 2vh;
+    line-height: 1;
+}
+
+/* Kellakomponendid */
+#time > div {
+    margin: 0;
+}
+
+#weekday {
+    font-size: 2vw;
+    margin: 0;
+}
+
+#date {
+    font-size: 1.5vw;
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+
+
+/* Kella ümbrise stiil */
+#clock-box {
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50vw;
+    padding: 2vh 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: border 0.3s ease, padding 0.3s ease;
+    border: 8px solid transparent;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Tihendatud tekst */
+#time, #weekday, #date {
+    line-height: 1.2;
+}
+
+/* Jalus (nimi ja link) */
+#footer {
+    position: absolute;
+    bottom: 1.5vh;
+    left: 2vw;
+    color: white;
+    font-size: 1.6vw;
+    background-color: #b8860b;
+    padding: 1vh 2vw;
+    border-radius: 50vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Hõõgumise animatsioon */
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 10px var(--glow-color);
+    }
+    50% {
+        box-shadow: 0 0 40px var(--glow-color);
+    }
+    100% {
+        box-shadow: 0 0 10px var(--glow-color);
+    }
+}
+
+/* Ajavööndi nupud */
+#timezone-options {
+    margin-top: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center;
+}
+
+/* Iga linna nupp */
+.timezone-button {
+    background-color: white;
+    padding: 0.8vh 2vw;
+    border-radius: 50vw;
+    font-size: 1.5vw;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.timezone-button:hover {
+    background-color: #ddeeff;
+}
+
+.timezone-button.active {
+    background-color: #a0c4ff;
+    color: white;
+}
+
+/* Fondivahetuse nupp all paremal */
+#corner-button {
+    position: absolute;
+    bottom: 1.5vh;
+    right: 2vw;
+    color: white;
+    font-size: 1.6vw;
+    background-color: #b8860b;
+    padding: 1vh 2vw;
+    border-radius: 50vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/* Dark mode nupp üleval paremal */
+#dark-toggle {
+    position: absolute;
+    top: 1.5vh;
+    right: 2vw;
+    color: white;
+    font-size: 1.6vw;
+    background-color: rgb(186, 134, 11);
+    padding: 1vh 2vw;
+    border-radius: 50vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/* Dark mode üldstiil */
+body.dark-mode {
+    background-image: none;
+    background-color: #121212;
+    color: white;
+}
+
+/* Kella kast dark mode'is */
+body.dark-mode #clock-box {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+}
+
+/* Ajavööndi nupud dark mode'is */
+body.dark-mode .timezone-button {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .timezone-button.active {
+    background-color: #555;
+    color: white;
+}
+
+/* Muud nupud dark mode'is */
+body.dark-mode #footer,
+body.dark-mode #corner-button,
+body.dark-mode #dark-toggle {
+    background-color: #333;
+    color: white;
+}
+
+    
+  
+  
+  
+  
+  
+  
+  
+  

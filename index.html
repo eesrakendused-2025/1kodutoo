@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fullscreen Clock</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="clock.css" />
+    <script src="clock.js" defer></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="dark-toggle">Dark Mode</div>
+      <div id="clock-box">
+        <div id="time">
+          <div id="hours">00h</div>
+          <div id="minutes">00m</div>
+          <div id="seconds">00s</div>
+        </div>
+        <div id="weekday">Weekday</div>
+        <div id="date">Date Month Year</div>
+      </div>
+      <div id="timezone-options" class="timezone-options">
+        <div class="timezone-button" data-tz="Europe/Tallinn">Estonia</div>
+        <div class="timezone-button" data-tz="Europe/London">London</div>
+        <div class="timezone-button" data-tz="America/New_York">New York</div>
+        <div class="timezone-button" data-tz="Asia/Tokyo">Tokyo</div>
+      </div>
+    </div>
+    <footer id="footer">
+      Riina Kikkas &nbsp; | &nbsp;
+      <a href="https://github.com/riinakik/1kodutoo" target="_blank">
+        GitHub repository
+      </a>
+    </footer>
+    <div id="corner-button">Click to change font</div>
+  </body>
+</html>
